@@ -14,15 +14,15 @@ function generateMarkdown(data) {
     licenseBadge = '[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)'
   }
   return `# ${data.title}
-${licenseBadgegit}
+${licenseBadge}
 ## Description
 ${data.description}
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
-- [License](#license)
 - [Contribution](#contribution)
+- [Questions](#questions)
 ## Installation
 ${data.installation}
 ## Usage
@@ -33,6 +33,12 @@ ${data.credits}
 ${data.contribution}
 ## Tests
 ${data.test}
+## Questions
+${data.GitHub}, ${data.GitHubUrl}
+
+If you have any questions or need further assistance, feel free to reach out via email bellow:
+
+${data.email}
 `;
 }
 
