@@ -9,6 +9,21 @@ const writeFileAsync = util.promisify(fs.writeFile);
 const questions = [
   {
     type: 'input',
+    name: 'GitHub',
+    message: 'What is your GitHub user name?',
+  },
+  {
+    type: 'input',
+    name: 'GitHubUrl',
+    message: 'What is your GitHub URL?',
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: 'What is your email address?',
+  },
+  {
+    type: 'input',
     name: 'title',
     message: 'What is your project name?',
   },
